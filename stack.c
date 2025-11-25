@@ -19,7 +19,7 @@ stack_t* make_stack(void){
 
 void push (stack_t* stack, void*data){
 	if(!stack) return;
-	stack_node_t* new_node =  malloc(stackof(stack_node_t));
+	stack_node_t* new_node =  malloc(sizeof(stack_node_t));
 	
 	if(!new_node){
 		fprintf(stderr, "Error: failed to allocate stack node\n");
@@ -51,7 +51,7 @@ void pop(stack_t * stack){
 	}
 	stack_node_t * temp= stack-> top;
 	stack->top = stack->top->next;
-	free(temp)
+	free(temp);
 
 
 }

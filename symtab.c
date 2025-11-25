@@ -10,7 +10,7 @@
 
 static symbol_t * table_head = NULL;
 
-symbol_t * create_symbol(char * name, int val)
+symbol_t * create_symbol(char * name, int val){
 	symbol_t* new_sym = malloc(sizeof(symbol_t));
 	if(!new_sym){
 		fprintf(stderr, "No room in symbol table\n");
