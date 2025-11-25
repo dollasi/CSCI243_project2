@@ -45,10 +45,29 @@ void * top(stack_t *stack){
 
 void pop(stack_t * stack){
 	if(empty_stack(stack)){
-
+		fprintf(stderr, "Error: attempted to pop from empty stack\n");
+		exit(EXIT_FAILURE);
 
 	}
+	stack_node_t * temp= stack-> top;
+	stack->top = stack->top->next;
+	free(temp)
 
 
+}
+
+int empty_stack(stack_t * stack){
+	return(stack == NULL || stack->top == NULL); 
+
+
+}
+
+void free_stack(stack_t * stack){
+	if(!stack) return;
+	while(!empty_stack(stack)){
+		pop(stack);
+
+	}
+	free(stack);
 
 }
