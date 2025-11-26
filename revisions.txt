@@ -1,0 +1,47 @@
+commit 3bdf2dd0f694905cb7bec0a8aba0a446653db7c3
+Author: Alexandria Lynne Jones <alj5312@rit.edu>
+Date:   Tue Nov 25 19:25:39 2025 -0500
+
+    main program, working, tested a [output a = 10], 1 3 5 ? [output is 1?(3:5)) = 3]and it loads symbols and processes expressions
+
+commit 56641c8749cfb18d523bd6e1902e9055403ccdaa
+Author: Alexandria Lynne Jones <alj5312@rit.edu>
+Date:   Tue Nov 25 19:20:40 2025 -0500
+
+    interp.c
+
+commit cf2b7e4b9d9a5c167b0e08479a3ab734ca8169f0
+Author: Alexandria Lynne Jones <alj5312@rit.edu>
+Date:   Tue Nov 25 16:56:31 2025 -0500
+
+    created tester files & parser
+
+commit d2970e54c0000f1d7f66860384cfc9e0ee56e416
+Author: Alexandria Lynne Jones <alj5312@rit.edu>
+Date:   Tue Nov 25 15:19:48 2025 -0500
+
+    stack.c: fixed issues, accidently typed stackof not sizeof, and forgot a ;, also made test file test_stack.c, testing push, pop, top, and empty
+
+commit c2603ed83f82fb8ab72c689261e283590dc00943
+Author: Alexandria Lynne Jones <alj5312@rit.edu>
+Date:   Tue Nov 25 14:49:10 2025 -0500
+
+    symbol table w create, look, dump funcs, handling file loading w validation
+
+commit 3903c0ccf704d8a4b74ba391bfc620d590e3e5ea
+Author: Alexandria Lynne Jones <alj5312@rit.edu>
+Date:   Tue Nov 25 14:31:53 2025 -0500
+
+    implimented stack w void * data for flexibility, basic operations working
+
+commit 17a5d1fd79950ae6ae4c8c85f92ce911a97216e6
+Author: Alexandria Lynne Jones <alj5312@rit.edu>
+Date:   Tue Nov 25 12:19:16 2025 -0500
+
+    issues w internet, so i kept getting more and more save files for stack.c
+
+commit 167338bcb9707bf7f8543e8ad676876da114e9f1
+Author: Alexandria Lynne Jones <alj5312@rit.edu>
+Date:   Sun Nov 16 15:36:52 2025 -0500
+
+    initial files
