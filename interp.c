@@ -9,22 +9,23 @@
 #include "symtab.h"
 #include "parser.h"
 #include "interp.h"
+//main func
 int main(int argc, char* argv[]){
-	if(argc >2){
+	if(argc >2){//checks command line args
 		fprintf(stderr, "Usage: interp [sym-table]\n");
 		return EXIT_FAILURE;
 	}
-	
+	//builds table from file
 	if(argc == 2){
 		build_table(argv[1]);
 
 	}else{ build_table(NULL);
 	}
-
+//print initial table
 	dump_table();
 
 	printf("Enter postfix expressions (CTRL-D to exit):\n");
-
+//read-eval-print loop
 	char line[MAX_LINE +2];
 	while(1){
 		printf("> ");
@@ -45,9 +46,9 @@ int main(int argc, char* argv[]){
 			continue;
 
 		}
-		rep(line);
+		rep(line);//process expression
 
-
+//print final table/ cleanup
 	}
 	printf("\n");
 	dump_table();
