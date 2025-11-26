@@ -1,12 +1,12 @@
 //tree_node.c
-//author: alexandria jones
+//#author: alexandria jones
 //tree node construction for parse trees
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include "tree_node.h"
-
+//creates the leaf node for the int and symb
 tree_node_t * make_leaf(exp_type_t exp_type, char* token){
 	tree_node_t* n = malloc(sizeof(tree_node_t));
 	if(!n){
@@ -36,7 +36,7 @@ tree_node_t * make_leaf(exp_type_t exp_type, char* token){
 
 	return n;
 }
-
+//creates interior node for operation
 tree_node_t * make_interior(op_type_t op, char * token, tree_node_t* left, tree_node_t* right){
 	tree_node_t* n = malloc(sizeof(tree_node_t));
 	if(!n){
@@ -71,7 +71,7 @@ tree_node_t * make_interior(op_type_t op, char * token, tree_node_t* left, tree_
 
 
 }
-
+//recursively frees tree memory
 void cleanup_tree(tree_node_t* node){
 	if(!node) return;
 	if(node->type == INTERIOR){
