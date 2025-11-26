@@ -1,5 +1,5 @@
 // symtab.c
-//author Alexxandria Jones
+//#author Alexandria Jones
 //symbol table using linked list
 
 #include <stdio.h>
@@ -9,7 +9,7 @@
 #include "symtab.h"
 
 static symbol_t * table_head = NULL;
-
+//adds new symbol to table
 symbol_t * create_symbol(char * name, int val){
 	symbol_t* new_sym = malloc(sizeof(symbol_t));
 	if(!new_sym){
@@ -32,7 +32,7 @@ symbol_t * create_symbol(char * name, int val){
 	return new_sym;
 }
 
-
+//finds symbols by name
 symbol_t * lookup_table(char * variable){
 	symbol_t* current = table_head;
 	while(current){
@@ -47,7 +47,7 @@ symbol_t * lookup_table(char * variable){
 
 
 
-
+// loads symbols from file into the table
 void build_table(char* filename){
 	if(!filename){
 		return;
@@ -81,11 +81,7 @@ void build_table(char* filename){
 
 }
 
-//symbol_t * create_symbol(){
-
-//}
-
-
+//frees all memory
 void free_table(void){
 	symbol_t* current = table_head;
 	while(current){
@@ -97,7 +93,7 @@ void free_table(void){
 	table_head = NULL;
 }
 
-
+//prints all the symbols in the table
 void dump_table(void){
 	if(!table_head){
 		return;
