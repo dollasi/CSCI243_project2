@@ -8,7 +8,7 @@
 #include <ctype.h>
 #include "parser.h"
 #include "symtab.h"
-
+#include "interp.h"
 static parse_error_t parse_err = PARSE_NONE;
 static eval_error_t eval_err = EVAL_NONE;
 
