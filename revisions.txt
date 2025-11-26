@@ -1,3 +1,39 @@
+commit d8dc017921b2a6bbd4de76eaa2d164b9c856a446
+Author: Alexandria Lynne Jones <alj5312@rit.edu>
+Date:   Tue Nov 25 20:24:34 2025 -0500
+
+    interp.c documentation
+
+commit e56b35aea6975881252baa0fcceaf5b388e79412
+Author: Alexandria Lynne Jones <alj5312@rit.edu>
+Date:   Tue Nov 25 20:22:24 2025 -0500
+
+    parser.c notes
+
+commit dd727990dfdc10ff9e13aeaa99f7c1aba53af56a
+Author: Alexandria Lynne Jones <alj5312@rit.edu>
+Date:   Tue Nov 25 20:17:42 2025 -0500
+
+    comments for tree_node.c
+
+commit 2356acbf4ce8c41be8659e0931772eff16568ef2
+Author: Alexandria Lynne Jones <alj5312@rit.edu>
+Date:   Tue Nov 25 19:42:29 2025 -0500
+
+    symtab.c comments
+
+commit cc64e045dbe4dd143a05f5aa2b01539bbd1b8cbf
+Author: Alexandria Lynne Jones <alj5312@rit.edu>
+Date:   Tue Nov 25 19:39:03 2025 -0500
+
+    stack.c comments/documentation
+
+commit 9168dcfe7059d8da08d4ae8dd49317682457250a
+Author: Alexandria Lynne Jones <alj5312@rit.edu>
+Date:   Tue Nov 25 19:27:20 2025 -0500
+
+    revisions.txt
+
 commit 3bdf2dd0f694905cb7bec0a8aba0a446653db7c3
 Author: Alexandria Lynne Jones <alj5312@rit.edu>
 Date:   Tue Nov 25 19:25:39 2025 -0500
