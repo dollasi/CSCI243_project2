@@ -1,5 +1,5 @@
 //parser.c
-//author: Alexandria ones
+//#author: Alexandria ones
 //parser for postfix expressions
 
 #include <stdio.h>
@@ -24,7 +24,7 @@ static op_type_t get_op_type(const char* token){
 	return NO_OP;
 }
 
-
+//check if token is valid int
 static int is_integer(const char * token){
 	if(!isdigit(token[0])) return 0;
 	for(size_t i = 1; i < strlen(token); i++){
@@ -37,7 +37,7 @@ static int is_integer(const char * token){
 
 }
  
-
+//check if token is valid symbol
 static int is_symbol(const char * token){
 	if(!isalpha(token[0])) return 0;
 	for(size_t i = 1; i < strlen(token); i++){
@@ -50,7 +50,7 @@ static int is_symbol(const char * token){
 
 }
 
-
+//recursively builds parse tree from stack
 
 tree_node_t * parse(stack_t * stack){
 	if(empty_stack(stack)){
@@ -331,7 +331,7 @@ int eval_tree(tree_node_t* node){
 
 	}
 }
-
+//prints tree from  infix notation
 void print_infix(tree_node_t* node){
 	if(!node) return;
 	
@@ -351,14 +351,14 @@ void print_infix(tree_node_t* node){
 
 
 }
-
+//main read-eval-print func
 void rep(char* exp){
 
 	char* comment = strchr(exp, '#');
 	if(comment){
 		*comment = '\0';
 	}
-
+//check for contents
 	int has_content = 0;
 	for(size_t i = 0; i < strlen(exp); i++){
 		if(!isspace(exp[i])){
@@ -369,7 +369,7 @@ void rep(char* exp){
 
 	}
 	if(!has_content) return;
-
+//make copy for parsing
 	char expr_copy[MAX_LINE + 1];//copy for parsing
 	strncpy(expr_copy, exp, MAX_LINE);
 	expr_copy[MAX_LINE] = '\0';
